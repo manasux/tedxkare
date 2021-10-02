@@ -1,79 +1,86 @@
 <template>
-  <div class="header flex">
-    <!-- logo div -->
-    <div class="header__logo">
-      <!-- logo img -->
-      <img src="https://i.ibb.co/x5V1dws/TEDx-Black.webp" alt="logo" class="header__logo__image">
-    </div>
-    <!-- navigation -->
-    <nav class="header__nav">
-      <ul class="header__nav__ul">
-        <li><button>Home</button></li>
-        <li><button>About</button></li>
-        <li><button>Speakers</button></li>
-        <li><button>Theme</button></li>
-        <li><button>Events</button></li>
-        <li><button>Team</button></li>
-        <li><button>Contact</button></li>
-      </ul>
+  <div id="nav">
+    <nav class="navbar navbar-expand-lg navbar-light font_nav">
+        <a class="navbar-brand" href="#">
+          <img
+            src="https://i.ibb.co/x5V1dws/TEDx-Black.webp"
+            alt="logo"
+            class="header__logo__image"
+          />
+        </a>
+
+      <button
+        class="navbar-toggler bg-light"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse navbar_new" id="navbarSupportedContent">
+        <div class="navbar-nav ml-auto">
+          <router-link to="/" class="nav-item nav-link text-white"
+            ><h6 class="nav_p">Home</h6></router-link
+          >
+          <router-link to="/About" class="nav-item nav-link text-white"
+            ><h6 class="nav_p">About</h6></router-link
+          >
+          <router-link to="/Speakers" class="nav-link text-white"
+            ><h6 class="nav_p">Speakers</h6></router-link
+          >
+          <router-link to="/Theme" class="nav-link text-white"
+            ><h6 class="nav_p">Theme</h6></router-link
+          >
+          <router-link to="/Events" class="nav-link text-white"
+            ><h6 class="nav_p">Events</h6></router-link
+          >
+          <router-link to="/Team" class="nav-link text-white"
+            ><h6 class="nav_p">Team</h6></router-link
+          >
+          <router-link to="/Contact" class="nav-link text-white"
+            ><h6 class="nav_p">Contact</h6></router-link
+          >
+        </div>
+      </div>
     </nav>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "Header",
+};
 </script>
 
 <style scoped>
-.header {
-  width: 100%;
-  height: 10%;
-  background-color: var(--black);
+#nav {
+  width: 100vw;
+  background-color: #000;
 }
-.header__logo{
-  width: 20%;
-  margin-left: 10em;
+#nav {
+  text-align: center;
 }
-.header__logo > .header__logo__image {
-  width: 50%;
-  object-fit: contain;
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
 }
-.header__nav {
-  width: 50%;
-  height: 100%;
-}
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} 
-.header__nav__ul {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.header__nav__ul > li {
-  margin-left: 1em;
-  list-style-type: none;
-  cursor: pointer;
-  color: var(--white);
-  font-family: var(--ff-raleway);
+
+.nav_p {
+  font-family: 'Raleway', sans-serif !important;
   font-size: 15px;
-  transition: all 0.3s ease;
 }
-.header__nav__ul > li > button {
-  border: none;
-  background: none;
-  color: var(--white);
-  padding: 0 10px;
+.navbar__logo{
+  margin-top: 1.3rem;
+  width: 20%;
 }
-.header__nav__ul > li:hover {
-  background-color: var(--primary_red);
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  border-radius: 0px 0px 50px 50px;
+.header__logo__image {
+  width: 80%;
+}
+.navbar_new{
+  margin-top: 1.3rem;
 }
 </style>
