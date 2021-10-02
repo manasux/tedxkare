@@ -1,0 +1,10 @@
+/* Raleway */
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+
+:root{
+    --white: #ffffff;
+    --black: #000;
+    --ff-raleway:  'Raleway', sans-serif;
+
+    --primary_red: #F02806;
+}
