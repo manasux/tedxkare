@@ -1,17 +1,20 @@
 <template>
-  <Header></Header>
+  <Home></Home>
 </template>
 
 <script>
-import Header from './components/Header/Header.vue'
+
+import Home from "./pages/Home/Home.vue";
 
 export default {
-  components: { Header },
+  components: { Home },
   
 }
 </script>
 
 <style>
+@import "./base.css";
+
 *{
   margin: 0;
   padding: 0;

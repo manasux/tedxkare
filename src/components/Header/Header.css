@@ -21,16 +21,19 @@
     margin-right: 50px;
     color: black;
     width: 60%;
+    height: 100%;
   }
   nav > ul {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
   nav > ul > li {
     list-style-type: none;
-    margin-right: 40px;
+    margin-right: 20px;
     cursor: pointer;
+    height: 100%;
   }
   .hamburger {
     font-size: 30px;
@@ -38,4 +41,19 @@
   .responsive__logo {
     font-size: 30px;
     margin-right: 30px;
+  }
+  .nav_btn{
+    width: 60px;
+    border: none;
+    background: none;
+    font-family: var(--ff-raleway);
+    cursor: pointer;
+    height: 100%;
+  }
+  ul > li > button:hover {
+    height: 100%;
+    background-color: var(--primary-red);
+    color: #fff;
+    border-radius: 0 0 50% 50%;
+    
   }

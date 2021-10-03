@@ -11,13 +11,13 @@
     <nav>
       <!-- <h1>{{ windowWidth }}</h1> -->
       <ul v-if="windowWidth >=  900">
-        <li>Home</li>
-        <li>About</li>
-        <li>Speakers</li>
-        <li>Theme</li>
-        <li>Events</li>
-        <li>Team</li>
-        <li>Contact</li>
+        <li><button class="nav_btn">Home</button></li>
+        <li><button class="nav_btn">About</button></li>
+        <li><button class="nav_btn">Speakers</button></li>
+        <li><button class="nav_btn">Theme</button></li>
+        <li><button class="nav_btn">Events</button></li>
+        <li><button class="nav_btn">Team</button></li>
+        <li><button class="nav_btn">Contact</button></li>
       </ul>
     </nav>
     <!-- hamburger menu -->
