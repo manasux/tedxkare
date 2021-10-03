@@ -1,86 +1,85 @@
 <template>
-  <div id="nav">
-    <nav class="navbar navbar-expand-lg navbar-light font_nav">
-        <a class="navbar-brand" href="#">
-          <img
-            src="https://i.ibb.co/x5V1dws/TEDx-Black.webp"
-            alt="logo"
-            class="header__logo__image"
-          />
-        </a>
-
-      <button
-        class="navbar-toggler bg-light"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse navbar_new" id="navbarSupportedContent">
-        <div class="navbar-nav ml-auto">
-          <router-link to="/" class="nav-item nav-link text-white"
-            ><h6 class="nav_p">Home</h6></router-link
-          >
-          <router-link to="/About" class="nav-item nav-link text-white"
-            ><h6 class="nav_p">About</h6></router-link
-          >
-          <router-link to="/Speakers" class="nav-link text-white"
-            ><h6 class="nav_p">Speakers</h6></router-link
-          >
-          <router-link to="/Theme" class="nav-link text-white"
-            ><h6 class="nav_p">Theme</h6></router-link
-          >
-          <router-link to="/Events" class="nav-link text-white"
-            ><h6 class="nav_p">Events</h6></router-link
-          >
-          <router-link to="/Team" class="nav-link text-white"
-            ><h6 class="nav_p">Team</h6></router-link
-          >
-          <router-link to="/Contact" class="nav-link text-white"
-            ><h6 class="nav_p">Contact</h6></router-link
-          >
-        </div>
-      </div>
+  <div class="header">
+    <!-- image logo -->
+    <div class="img_logo">
+      <img
+        src="https://i.ibb.co/M8W8tt2/TEDx-Black-Transparent-004.png"
+        alt="logo"
+      />
+    </div>
+    <!-- nav -->
+    <nav>
+      <!-- <h1>{{ windowWidth }}</h1> -->
+      <ul v-if="windowWidth >=  900">
+        <li>Home</li>
+        <li>About</li>
+        <li>Speakers</li>
+        <li>Theme</li>
+        <li>Events</li>
+        <li>Team</li>
+        <li>Contact</li>
+      </ul>
     </nav>
+    <!-- hamburger menu -->
+    <div @click="toggleNavbar()" v-if="windowWidth < 900" class="responsive__logo">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ResponsiveHeader v-if="windowWidth < 900 && toggle"></ResponsiveHeader>
+    
   </div>
 </template>
 
 <script>
+import ResponsiveHeader from "./ResponsiveHeader.vue";
 export default {
   name: "Header",
+  components: { ResponsiveHeader },
+  data() {
+    return {
+      isMobile: false,
+      windowWidth: window.innerWidth,
+      txt: "",
+      toggle: false,
+    };
+  },
+
+
+  // watch: {
+  //   windowHeight(newWidth, oldWidth) {
+  //     this.txt = `it changed to ${newWidth} from ${oldWidth}`;
+  //   },
+  // },
+
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener("resize", this.onResize);
+    });
+  },
+
+  beforeUnmount() {
+    window.removeEventListener("resize", this.onResize);
+  },
+
+  methods: {
+    onResize() {
+      this.windowWidth = window.innerWidth;
+      this.enterMobileView();
+    },
+    enterMobileView() {
+      if (this.windowWidth < 900) {
+        this.isMobile = true;
+      } else {
+        this.isMobile = false;
+      }
+    },
+    toggleNavbar(){
+      this.toggle = !this.toggle;
+    }
+  },
 };
 </script>
 
 <style scoped>
-#nav {
-  width: 100vw;
-  background-color: #000;
-}
-#nav {
-  text-align: center;
-}
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-.nav_p {
-  font-family: 'Raleway', sans-serif !important;
-  font-size: 15px;
-}
-.navbar__logo{
-  margin-top: 1.3rem;
-  width: 20%;
-}
-.header__logo__image {
-  width: 80%;
-}
-.navbar_new{
-  margin-top: 1.3rem;
-}
+@import "./Header.css";
+@import "./responsiveness.css";
 </style>
