@@ -2,15 +2,17 @@
   <Home></Home>
   <AboutHome></AboutHome>
   <SpeakersHome></SpeakersHome>
+  <ThemeHome></ThemeHome>
 </template>
 
 <script>
 import Home from "./pages/Home/Home.vue";
 import AboutHome from "./pages/Home/AboutHome.vue";
 import SpeakersHome from './pages/Home/SpeakersHome.vue';
+import ThemeHome from './pages/Home/ThemeHome.vue';
 
 export default {
-  components: { Home, AboutHome,SpeakersHome },
+  components: { Home, AboutHome,SpeakersHome, ThemeHome },
 };
 </script>
 

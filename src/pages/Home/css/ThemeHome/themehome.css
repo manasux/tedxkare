@@ -1,0 +1,21 @@
+.themeHome {
+    width: 100%;
+    height: 100%;
+    background-color: var(--black);
+  }
+  .theme__title {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    height: 20%;
+    margin-left: 100px;
+  }
+  .theme__title > span {
+    color: var(--white);
+    font-size: 20px;
+    font-family: var(--ff-roboto);
+    transform: translateY(-8px);
+  }
+ 
+  
+
