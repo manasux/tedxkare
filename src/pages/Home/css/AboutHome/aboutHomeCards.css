@@ -1,0 +1,65 @@
+.abouthome__Cards {
+    height: 38%;
+    width: 100%;
+    margin-top: 4%;
+    display: flex;
+  }
+  .card {
+    width: 30%;
+    height: 100%;
+    background: white;
+    /* background-image: url("https://i.ibb.co/1LKx8TC/Rectangle-5.png"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 5%;
+  }
+  .first-card{
+    background-image: url("https://i.ibb.co/1LKx8TC/Rectangle-5.png");
+  }
+  .second-card{
+    background-image: url('https://i.ibb.co/8YS24Bd/Rectangle-7.png');
+  }
+  .third-card{
+    background-image: url('https://i.ibb.co/nsKXqWH/Rectangle-6.png');
+  }
+  .card__overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .card_text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .card_top_text{
+    margin-bottom: 2%;
+    font-family: var(--ff-rubik);
+    font-size: 20px;
+  }
+  .card_main_text{
+    font-family: var(--ff-viga);
+    font-size: 30px;
+    border-bottom: 2px solid var(--primary-red);
+    padding-bottom: 20px;
+  }
+  .card_btn{
+    margin-top: 5%;
+  }
+  .card_btn > button {
+    width: 113px;
+    height: 34px;
+    font-family: var(--ff-viga);
+    font-size: 16px;
+    border: 1.2px solid var(--primary-red);
+    background: none;
+    color: white;
+    cursor: pointer;
+  }
+  .third-card{
+    margin-right: 5%;
+  }

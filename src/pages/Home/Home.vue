@@ -11,7 +11,7 @@
     </div>
     <!-- Tagline -->
     <div class="homepage__tagline">
-      <span>THE ARTISTIC APPROACH TOWARDS MODERN TECHNOLOGY</span>
+      <span>The artistic approach towards modern technology</span>
     </div>
     <button class="btn btn_register">Register</button>
   </div>
@@ -45,10 +45,12 @@ export default {
   align-items: center;
 }
 .homepage__logo {
-  height: 10%;
+  height: 8%;
+  width: auto;
 }
 .homepage__logo > img {
   height: 100%;
+  width: 100%;
   object-fit: cover;
 }
 .homepage__tagline {
@@ -56,6 +58,9 @@ export default {
   font-size: 70px;
   text-align: center;
   font-family: var(--ff-roboto);
+}
+.homepage__tagline > span{
+   text-transform: uppercase;
 }
 .btn {
   margin-top: 20px;
