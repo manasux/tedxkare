@@ -16,6 +16,54 @@
     font-family: var(--ff-roboto);
     transform: translateY(-8px);
   }
- 
-  
-
+  .theme__main__section{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    margin-top: 5%;
+  }
+  .theme_main_section_title{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .theme_main_section_title > img{
+    width: 70%;
+  }
+  .theme_main_section_text {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid var(--primary-red);
+  }
+  .theme_main_section_text > span {
+    color: white;
+    letter-spacing: 0.8px;
+    line-height: 173.7%;
+    padding-left: 10%;
+    margin-right: 10%;
+  }
+  .theme__register__button{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn {
+    margin-top: 20px;
+    width: 150px;
+    height: 55px;
+    font-size: 25px;
+    font-family: var(--ff-raleway);
+    font-weight: bold;
+    border-radius: 3px;
+    border: none;
+    background-color: var(--primary-red);
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }

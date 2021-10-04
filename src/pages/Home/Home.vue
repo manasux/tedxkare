@@ -69,7 +69,7 @@ export default {
   font-size: 25px;
   font-family: var(--ff-raleway);
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 3px;
   border: none;
   background-color: var(--primary-red);
   color: white;
