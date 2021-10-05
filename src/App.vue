@@ -5,6 +5,7 @@
   <ThemeHome></ThemeHome>
   <EventsHome></EventsHome>
   <TeamHome></TeamHome>
+  <ContactHome></ContactHome>
 </template>
 
 <script>
@@ -14,6 +15,7 @@ import SpeakersHome from "./pages/Home/SpeakersHome.vue";
 import ThemeHome from "./pages/Home/ThemeHome.vue";
 import EventsHome from "./pages/Home/EventsHome.vue";
 import TeamHome from "./pages/Home/TeamHome.vue";
+import ContactHome from './pages/Home/ContactHome.vue';
 
 export default {
   components: {
@@ -23,6 +25,7 @@ export default {
     ThemeHome,
     EventsHome,
     TeamHome,
+    ContactHome,
   },
 };
 </script>
