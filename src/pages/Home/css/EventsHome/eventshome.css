@@ -107,3 +107,6 @@
     background: none;
     color: white;
   }
+  .first_event, .second_event, .third_event, .fourth_event{
+    border: 1px solid #fff;
+  }

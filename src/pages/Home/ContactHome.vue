@@ -39,6 +39,20 @@
           <textarea cols="30" rows="1"></textarea>
         </form>
       </div>
+      <!-- footer -->
+      <div class="contact__footer">
+        <!-- Address -->
+        <div class="footer__address">
+          <span class="title" >Address</span>
+          <span class="detail">Kalasalingam Academy of Research and Education, Krishnankoil, Srivilliputhur, Tamilnadu 626126</span>
+        </div> 
+        <!-- Contacts -->
+        <div class="footer__contact">
+          <span class="title">Contacts</span>
+          <span class="email">9918004063@klu.ac.in</span>
+          <span class="phone">+91-6202286832</span>
+        </div>
+      </div>
     </div>
   </div>
 </template>

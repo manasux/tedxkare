@@ -38,12 +38,14 @@
   }
   /* Contact Page */
   .contact__page{
+      position: relative;
     height: 85%;
     width: 40%;
     transform: translateX(130%) translateY(-120px);
     /* transform: translateY(-10%); */
     background-color: white;
     border-radius: 10px;
+    z-index: 1000;
   }
   .contact_page_form{
       display: flex;
@@ -71,4 +73,48 @@
       margin-top: 10%;
       font-size: 20px; 
       outline: none;
+  }
+  .contact__footer{
+      width: 100%;
+      height: 30%;
+      background: var(--black);
+      transform: translateY(-130%);
+      z-index: 1;
+      display: flex;
+  }
+  .footer__address{
+      width: 20%;;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+  }
+  .footer__address > span {
+      color: white;
+      margin-left: 10%;
+      margin-top: 10%;
+  }
+  .footer__address > .title{
+      font-family: var(--ff-viga);
+      font-size: 20px;
+  }
+  .footer__address > .detail{
+      font-family: var(--ff-raleway);
+      font-size: 15px;
+  }
+  .footer__contact{
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+  }
+  .footer__contact > span {
+      color: white;
+      margin-top: 10%;
+  }
+  .footer__contact > .title {
+    font-family: var(--ff-viga);
+    font-size: 20px;
+  }
+  .footer__contact > .email, .footer__contact > .phone {
+      font-family: var(--ff-raleway);
+      font-size: 15px;
   }
