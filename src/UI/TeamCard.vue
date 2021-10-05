@@ -1,7 +1,15 @@
 <template>
   <div class="teamcard">
-    <img src="https://i.ibb.co/yQgh3VN/Rectangle-25.png" alt="face" />
-    <div class="overlay">Organiser</div>
+    <div class="flip_card_inner">
+      <div class="flip_card_front">
+        <img src="https://i.ibb.co/yQgh3VN/Rectangle-25.png" alt="..." />
+      </div>
+      <div class="flip_card_back">
+        <h1>John Doe</h1>
+        <p>Architect and Engineer</p>
+        <p>We love that guy</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -11,33 +19,42 @@ export default {};
 
 <style scoped>
 .teamcard {
-  position: relative;
   width: 30%;
   height: 100%;
-  background-color: #fff;
-  border-radius: 10px;
-  background: rgba(0, 0, 0, 0.6);
-}
-.teamcard > img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.7); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: 0.5s ease;
-  opacity: 1;
-  color: white;
-  font-size: 20px;
-  padding: 10px;
-  text-align: center;
-  font-size: 40px;
-  font-family: var(--ff-viga);
+  background-color: transparent;
+  perspective: 1000px;
 }
 
+.flip_card_inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+.teamcard:hover .flip_card_inner {
+  transform: rotateY(180deg);
+}
+.flip_card_front, .flip_card_back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip_card_front > img{
+    width: 100%;
+    height: 100%;
+}
+.flip_card_front {
+  /* background-color: #bbb; */
+  color: black;
+}
+.flip_card_back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
 </style>
