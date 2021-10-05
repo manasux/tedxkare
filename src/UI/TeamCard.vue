@@ -2,24 +2,21 @@
   <div class="teamcard">
     <div class="flip_card_inner">
       <div class="flip_card_front">
-        <img src="https://i.ibb.co/yQgh3VN/Rectangle-25.png" alt="..." />
+        <img :src="imgsrc" alt="..." />
       </div>
       <div class="flip_card_back">
-        <span class="team_person_name">Manas Mishra</span>
-        <span class="team_person_designation">Web Dev Head</span>
-        <span class="team_person_detail"
-          >Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </span>
+        <span class="team_person_name">{{ name }}</span>
+        <span class="team_person_designation">{{ designation }}</span>
+        <span class="team_person_detail">{{ detail }} </span>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  props: ["imgsrc", "name", "designation", "detail"],
+};
 </script>
 
 <style scoped>
@@ -71,15 +68,15 @@ export default {};
   font-family: var(--ff-viga);
   font-size: 50px;
 }
-.team_person_designation{
-    font-size: 20px;
-    font-family: var(--ff-raleway);
+.team_person_designation {
+  font-size: 20px;
+  font-family: var(--ff-raleway);
 }
-.team_person_detail{
-    font-size: 18px;
-    font-family: var(--ff-raleway);
-    margin-right: 5%;
-    margin-left: 5%;
-    margin-top: 10%;
+.team_person_detail {
+  font-size: 18px;
+  font-family: var(--ff-raleway);
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 10%;
 }
 </style>
