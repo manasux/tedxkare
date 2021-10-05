@@ -4,17 +4,26 @@
   <SpeakersHome></SpeakersHome>
   <ThemeHome></ThemeHome>
   <EventsHome></EventsHome>
+  <TeamHome></TeamHome>
 </template>
 
 <script>
 import Home from "./pages/Home/Home.vue";
 import AboutHome from "./pages/Home/AboutHome.vue";
-import SpeakersHome from './pages/Home/SpeakersHome.vue';
-import ThemeHome from './pages/Home/ThemeHome.vue';
-import EventsHome from './pages/Home/EventsHome.vue';
+import SpeakersHome from "./pages/Home/SpeakersHome.vue";
+import ThemeHome from "./pages/Home/ThemeHome.vue";
+import EventsHome from "./pages/Home/EventsHome.vue";
+import TeamHome from "./pages/Home/TeamHome.vue";
 
 export default {
-  components: { Home, AboutHome,SpeakersHome, ThemeHome, EventsHome },
+  components: {
+    Home,
+    AboutHome,
+    SpeakersHome,
+    ThemeHome,
+    EventsHome,
+    TeamHome,
+  },
 };
 </script>
 

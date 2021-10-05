@@ -18,9 +18,9 @@
     <div class="aboutHome__mainSection">
       <!-- Main title -->
       <div class="mainsection__title">
-        <span class="first">Ignite</span>
-        <span class="second">Connect</span>
-        <span class="third">Inspire</span>
+        <span class="first_name">Ignite</span>
+        <span class="second_name">Connect</span>
+        <span class="third_name">Inspire</span>
       </div>
 
       <!-- Main title text -->
