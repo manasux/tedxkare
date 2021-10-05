@@ -24,3 +24,15 @@
   justify-content: center;
   align-items: center;
 }
+
+.team_left {
+  width: 5%;
+  margin-right: 5%;
+  cursor: pointer;
+}
+.team_right {
+  width: 5%;
+  /* transform: rotateZ(180deg); */
+  margin-left: 5%;
+  cursor: pointer;
+}

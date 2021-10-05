@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  props: ["imgsrc", "name", "designation", "detail"],
+  props: ["imgsrc", "name", "designation", "detail", "key"],
 };
 </script>
 
