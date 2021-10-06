@@ -1,50 +1,25 @@
 <template>
-  <Home></Home>
-  <AboutHome></AboutHome>
-  <SpeakersHome></SpeakersHome>
-  <ThemeHome></ThemeHome>
-  <EventsHome></EventsHome>
-  <TeamHome></TeamHome>
-  <ContactHome></ContactHome>
+  <router-view/>
 </template>
-
-<script>
-import Home from "./pages/Home/Home.vue";
-import AboutHome from "./pages/Home/AboutHome.vue";
-import SpeakersHome from "./pages/Home/SpeakersHome.vue";
-import ThemeHome from "./pages/Home/ThemeHome.vue";
-import EventsHome from "./pages/Home/EventsHome.vue";
-import TeamHome from "./pages/Home/TeamHome.vue";
-import ContactHome from './pages/Home/ContactHome.vue';
-
-export default {
-  components: {
-    Home,
-    AboutHome,
-    SpeakersHome,
-    ThemeHome,
-    EventsHome,
-    TeamHome,
-    ContactHome,
-  },
-};
-</script>
 
 <style>
 @import "./base.css";
 
-* {
+*, *::after, *::before{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 #app {
-  width: auto;
+  width: 100%;
   height: 100vh;
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  /* text-align: center; */
-  /* color: #2c3e50; */
+  text-align: center;
+  color: #2c3e50;
 }
+
+
 </style>

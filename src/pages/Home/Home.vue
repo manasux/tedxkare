@@ -13,7 +13,7 @@
     <div class="homepage__tagline">
       <span>The artistic approach towards modern technology</span>
     </div>
-    <button class="btn btn_register">Register</button>
+    <button @click="$router.push('register')" class="btn btn_register">Register</button>
   </div>
 </template>
 
