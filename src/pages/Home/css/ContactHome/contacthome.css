@@ -118,3 +118,21 @@
       font-family: var(--ff-raleway);
       font-size: 15px;
   }
+  ::placeholder{
+      color: #333;
+      font-family: var(--ff-robotoCondesed);
+      font-size: 18px;
+  }
+  .btn_submit{
+      height: 53px;
+      width: 181px;
+      font-size: 25px;
+      font-family: var(--ff-viga);
+      font-weight: lighter;
+      text-transform: uppercase;
+      border: none !important;
+      background-color: var(--black);
+      color: var(--white);
+      transform: translateX(180%) translateY(50%);
+      border-radius: 5px 0 0 5px;
+  }
