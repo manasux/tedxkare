@@ -11,7 +11,7 @@
     <nav>
       <!-- <h1>{{ windowWidth }}</h1> -->
       <ul v-if="windowWidth >=  900">
-        <li><button class="nav_btn">Home</button></li>
+        <li><button @click="$router.push('/')" class="nav_btn">Home</button></li>
         <li><button class="nav_btn">About</button></li>
         <li><button class="nav_btn">Speakers</button></li>
         <li><button class="nav_btn">Theme</button></li>
