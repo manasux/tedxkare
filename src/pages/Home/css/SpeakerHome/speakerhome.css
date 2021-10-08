@@ -41,5 +41,13 @@ img {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) 
 {
-  
+  .speakersHome{
+    height: 100vh;
+  }
+  .speaker__title{
+    width: 100vw;
+  }
+  .speaker__title > img {
+    width: 26%;
+  }
 }
