@@ -1,5 +1,5 @@
 <template>
-  <div class="card">
+  <div class="card_speaker">
     <!-- Card Image  -->
     <div class="card_img">
       <img :src="imgsrc" alt="..." />

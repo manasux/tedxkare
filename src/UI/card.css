@@ -1,8 +1,9 @@
-.card {
+.card_speaker {
   width: 80%;
   height: 100%;
   background-color: var(--card-bg);
   display: flex;
+  margin-left: 6%;
 }
 .card_img {
   background-color: pink;
@@ -53,7 +54,7 @@
   margin-top: 2%;
 }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {
-  .card {
+  .card_speaker {
     width: 80%;
     height: 500px;
     display: flex;
