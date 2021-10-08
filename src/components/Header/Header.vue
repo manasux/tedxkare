@@ -10,8 +10,10 @@
     <!-- nav -->
     <nav>
       <!-- <h1>{{ windowWidth }}</h1> -->
-      <ul v-if="windowWidth >=  900">
-        <li><button @click="$router.push('/')" class="nav_btn">Home</button></li>
+      <ul v-if="windowWidth >= 900">
+        <li>
+          <button @click="$router.push('/')" class="nav_btn">Home</button>
+        </li>
         <li><button class="nav_btn">About</button></li>
         <li><button class="nav_btn">Speakers</button></li>
         <li><button class="nav_btn">Theme</button></li>
@@ -21,11 +23,14 @@
       </ul>
     </nav>
     <!-- hamburger menu -->
-    <div @click="toggleNavbar()" v-if="windowWidth < 900" class="responsive__logo">
+    <div
+      @click="toggleNavbar()"
+      v-if="windowWidth < 900"
+      class="responsive__logo"
+    >
       <i class="fas fa-bars"></i>
     </div>
     <ResponsiveHeader v-if="windowWidth < 900 && toggle"></ResponsiveHeader>
-    
   </div>
 </template>
 
@@ -42,13 +47,6 @@ export default {
       toggle: false,
     };
   },
-
-
-  // watch: {
-  //   windowHeight(newWidth, oldWidth) {
-  //     this.txt = `it changed to ${newWidth} from ${oldWidth}`;
-  //   },
-  // },
 
   mounted() {
     this.$nextTick(() => {
@@ -72,9 +70,9 @@ export default {
         this.isMobile = false;
       }
     },
-    toggleNavbar(){
+    toggleNavbar() {
       this.toggle = !this.toggle;
-    }
+    },
   },
 };
 </script>

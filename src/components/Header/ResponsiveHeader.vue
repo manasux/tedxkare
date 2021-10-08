@@ -1,4 +1,5 @@
 <template>
+<!--  @click="$router.push('/') -->
   <div class="responsive_header">
     <ul>
       <li>Home</li>

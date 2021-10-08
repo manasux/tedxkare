@@ -21,5 +21,12 @@
   color: #2c3e50;
 }
 
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) 
+{
+  #app{
+    height: auto;
+  }
+}
+
 
 </style>

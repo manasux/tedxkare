@@ -1,4 +1,3 @@
-// This vue file if for about section, which is being shown in the home page of the website.
 
 <template>
   <div class="aboutHome">
@@ -97,5 +96,4 @@ export default {
 <style scoped>
 @import "./css/AboutHome/aboutHome.css";
 @import "./css/AboutHome/aboutHomeCards.css"
-
 </style>
