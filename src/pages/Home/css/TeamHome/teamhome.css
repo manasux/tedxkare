@@ -36,3 +36,20 @@
   margin-left: 5%;
   cursor: pointer;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)
+{
+  .teamhome{
+    height: 100vh;
+    
+  }
+  .team__title{
+    width: auto;
+    padding-top: 10%;
+  }
+  .team__title > img {
+    width: 30%;
+  }
+  .team__card{
+    width: 100%;
+  }
+}

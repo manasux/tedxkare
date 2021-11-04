@@ -43,9 +43,10 @@ img {
 {
   .speakersHome{
     height: 100vh;
+    width: 100vw;
   }
   .speaker__title{
-    width: 100vw;
+    width: auto;
   }
   .speaker__title > img {
     width: 26%;

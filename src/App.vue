@@ -23,7 +23,18 @@
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) 
 {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  * {
+    outline: solid 1px red;
+}
+
+  
   #app{
+    max-width: 100%;
     height: auto;
   }
 }

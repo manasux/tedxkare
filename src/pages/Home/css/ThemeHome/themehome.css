@@ -71,7 +71,7 @@
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) 
 {
   .themeHome{
-    /* width: 100%; */
+    width: 100vw;
     height: 100vh;
   }
   .theme__title{
@@ -84,7 +84,7 @@
     height: auto;
   }
   .theme__title{
-    width: 100%;
+    width: auto;
   }
   .theme__title > img {
     width: 28%;

@@ -66,9 +66,13 @@ img {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) 
 {
+  .aboutHome{
+    width: 100vw;
+    height: 100vh;
+  }
   .about__title{
     padding-top: 10%;
-    width: 80%;
+    width: auto;
   }
   .about__title > img {
     width: 40%;
@@ -77,9 +81,10 @@ img {
     padding-top: 10%;
     flex-direction: column;
   }
+
   .aboutHome__mainSection > .mainsection__title { 
-    margin-left: 10%;
-    width: 100vw;
+    /* margin-left: 10%; */
+    width: auto;
     border-right: 0px solid white;
   }
   .aboutHome__mainSection > .mainsection__text {

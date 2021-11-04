@@ -9,7 +9,7 @@
       <!-- Contact Title -->
       <div class="contact__title">
         <!-- About title span -->
-        <span class="contact__title__span">About</span>
+        <span class="contact__title__span">Contact</span>
         <!-- about title logo img -->
         <img
           src="https://i.ibb.co/RDKp156/TEDx-White-Transparent-003.png"
